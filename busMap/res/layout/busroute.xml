@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="中山陵" />
+
+    <EditText
+        android:id="@+id/end"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:inputType="text"
+        android:text="新街口" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/transit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公交路线搜索" />
+
+   
+    </LinearLayout>
+
+    <com.baidu.mapapi.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <ListView
+        android:id="@+id/bus_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+       android:visibility="invisible">
+
+    </ListView>
+    
+       <ListView
+        android:id="@+id/route_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+       android:visibility="invisible">
+
+    </ListView>
+  
+
+</LinearLayout>
